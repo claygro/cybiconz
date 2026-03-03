@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import CybiLearn from "./pages/Cybilearn";
+import Community from "./pages/Community";
 function App() {
   return (
     <Router>
@@ -13,6 +14,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/cybilearn" element={<CybiLearn />} />
+            <Route path="/community" element={<Community />} />
           </Routes>
         </div>
         {/* <Footer /> */}

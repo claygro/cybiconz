@@ -1,4 +1,5 @@
 import cybiLearn from "../static/Cybilearn.static";
+import { Link } from "react-router-dom";
 const CybiLearn = () => {
   return (
     <div className="max-w-7xl mx-auto px-6 py-16">
@@ -10,9 +11,13 @@ const CybiLearn = () => {
           Moving beyond theory. Learn practical development by building
           real-world projects used by CybiconZ.
         </p>
-        <button className="bg-[#00FF8E] px-8 py-3 rounded-lg font-bold text-green-900">
+
+        <Link
+          to="##"
+          className="bg-[#00FF8E] px-8 py-3 rounded-lg font-bold text-green-900 inline-block"
+        >
           Apply Now
-        </button>
+        </Link>
       </div>
 
       <h2 className="text-3xl font-bold mb-12">How it Works</h2>
