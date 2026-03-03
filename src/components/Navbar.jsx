@@ -9,12 +9,15 @@ const Navbar = () => {
     <nav className="fixed w-full top-0 z-50 bg-[#050A18]/90 backdrop-blur-md border-b border-white/5">
       <div className="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold tracking-tighter">
-          CYBICON<span className="text-teal-400">Z</span>
+          CYBICON<span className="text-[#00FF8E]">Z</span>
         </Link>
 
         <div className="hidden md:flex items-center space-x-8 text-sm font-medium">
           <Link to="/" className="hover:text-teal-400 transition">
             Home
+          </Link>
+          <Link to="/about" className="hover:text-teal-400 transition">
+            About
           </Link>
           <Link to="/services" className="hover:text-teal-400 transition">
             Services
@@ -47,7 +50,7 @@ const Navbar = () => {
           </Link>
           <Link
             to="/contact"
-            className="bg-teal-500 text-white px-6 py-2.5 rounded-full hover:bg-teal-600 transition"
+            className="bg-[#00FF8E] text-white px-6 py-2.5 rounded-full hover:bg-teal-600 transition"
           >
             Start a Project
           </Link>
