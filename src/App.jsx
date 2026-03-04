@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import CybiLearn from "./pages/Cybilearn";
 import Community from "./pages/Community";
+import Services from "./pages/Service";
+import Team from "./pages/Team";
 function App() {
   return (
     <Router>
@@ -15,6 +17,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/cybilearn" element={<CybiLearn />} />
             <Route path="/community" element={<Community />} />
+            <Route path="/service" element={<Services />} />
+            <Route path="/team" element={<Team />} />
           </Routes>
         </div>
         {/* <Footer /> */}

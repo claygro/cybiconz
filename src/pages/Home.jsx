@@ -58,7 +58,7 @@ const Home = () => {
                 {platform.linkType === "internal" ? (
                   <Link
                     to={platform.link}
-                    className="text-teal-400 font-semibold flex items-center group"
+                    className="text-[#00FF8E] font-semibold flex items-center group"
                   >
                     {platform.linkText}
                     <ArrowRight
@@ -69,7 +69,7 @@ const Home = () => {
                 ) : (
                   <a
                     href={platform.link}
-                    className="text-teal-400 font-semibold flex items-center group"
+                    className="text-[#00FF8E] font-semibold flex items-center group"
                   >
                     {platform.linkText}
                     <ArrowRight
@@ -92,17 +92,17 @@ const Home = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <WhyCard
-            icon={<Zap className="text-teal-400" />}
+            icon={<Zap className="text-[#00FF8E]" />}
             title="Youth Innovation"
             desc="Driven by fresh ideas and the latest tech trends."
           />
           <WhyCard
-            icon={<ShieldCheck className="text-teal-400" />}
+            icon={<ShieldCheck className="text-[#00FF8E]" />}
             title="Scalable Systems"
             desc="Architecture that grows with your business needs."
           />
           <WhyCard
-            icon={<Users className="text-teal-400" />}
+            icon={<Users className="text-[#00FF8E]" />}
             title="Fast Communication"
             desc="Dedicated support and transparent project updates."
           />

@@ -13,18 +13,18 @@ const Navbar = () => {
         </Link>
 
         <div className="hidden md:flex items-center space-x-8 text-sm font-medium">
-          <Link to="/" className="hover:text-teal-400 transition">
+          <Link to="/" className="hover:text-[#00FF8E] transition">
             Home
           </Link>
-          <Link to="/about" className="hover:text-teal-400 transition">
+          <Link to="/about" className="hover:text-[#00FF8E] transition">
             About
           </Link>
-          <Link to="/services" className="hover:text-teal-400 transition">
+          <Link to="/service" className="hover:text-[#00FF8E] transition">
             Services
           </Link>
 
           <div className="relative group">
-            <button className="flex items-center hover:text-teal-400 py-4 transition">
+            <button className="flex items-center hover:text-[#00FF8E] py-4 transition">
               Platforms <ChevronDown size={16} className="ml-1" />
             </button>
             <div className="absolute hidden group-hover:block top-full left-0 bg-[#0A1128] border border-white/10 p-2 w-48 rounded-lg shadow-2xl">
@@ -35,7 +35,7 @@ const Navbar = () => {
                 CybiLearn
               </Link>
               <a
-                href="https://shoppingghar.com"
+                href="###"
                 target="_blank"
                 rel="noreferrer"
                 className="block px-4 py-2 hover:bg-white/5 rounded"
@@ -44,13 +44,15 @@ const Navbar = () => {
               </a>
             </div>
           </div>
-
-          <Link to="/community" className="hover:text-teal-400 transition">
+          <Link to="/team" className="hover:text-[#00FF8E] transition">
+            Meet team
+          </Link>
+          <Link to="/community" className="hover:text-[#00FF8E] transition">
             Community
           </Link>
           <Link
             to="/contact"
-            className="bg-[#00FF8E] text-white px-6 py-2.5 rounded-full hover:bg-teal-600 transition"
+            className="bg-[#00FF8E] text-[#005730] px-6 py-2.5 rounded-full hover:bg-[#00ca6f] transition"
           >
             Start a Project
           </Link>
@@ -72,7 +74,7 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            to="/services"
+            to="/service"
             className="block text-lg"
             onClick={() => setIsOpen(false)}
           >
@@ -80,10 +82,17 @@ const Navbar = () => {
           </Link>
           <Link
             to="/cybilearn"
-            className="block text-lg font-bold text-teal-400"
+            className="block text-lg font-bold text-[#00FF8E]"
             onClick={() => setIsOpen(false)}
           >
             CybiLearn
+          </Link>
+          <Link
+            to="/team"
+            className="block text-lg"
+            onClick={() => setIsOpen(false)}
+          >
+            Meet team
           </Link>
           <Link
             to="/community"
